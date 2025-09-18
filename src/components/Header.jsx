@@ -25,7 +25,7 @@ function Header({ toggleMobileNavigation }) {
       }
       secondaryMenu={
         <div style={{ fontWeight: 'bold', color: 'white' }}>
-          Avinash Vishwakarma
+          Av
         </div>
       }
       logo={{
