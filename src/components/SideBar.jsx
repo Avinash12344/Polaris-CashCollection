@@ -78,31 +78,14 @@ function SideBar({onSelectPage}) {
       <Navigation.Section 
         title="Configurations"
         items={[
-            {
-            label: 'Widgets',
-            icon: OrderIcon,
-            onClick: () => console.log('Orders clicked'),
-          },
-          {
-            label: 'Tracking',
-            icon: OrderIcon,
-            onClick: () => console.log('Orders clicked'),
-          },
+            
           {
             label: 'Notifications',
             icon: OrderIcon,
             onClick: () => console.log('Orders clicked'),
           },
-          {
-            label: 'Delivery Apps',
-            icon: OrderIcon,
-            onClick: () => console.log('Orders clicked'),
-          },
-          {
-            label: 'WorkFlow',
-            icon: OrderIcon,
-            onClick: () => console.log('Orders clicked'),
-          },
+          
+          
         ]}
       />
       <Navigation.Section 
