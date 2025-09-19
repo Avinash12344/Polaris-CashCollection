@@ -84,8 +84,16 @@ function SideBar({onSelectPage}) {
             icon: OrderIcon,
             onClick: () => console.log('Orders clicked'),
           },
-          
-          
+          {
+            label: 'Delivery Apps',
+            icon: OrderIcon,
+            onClick: () => console.log('Orders clicked'),
+          },
+          {
+            label: 'WorkFlow',
+            icon: OrderIcon,
+            onClick: () => console.log('Orders clicked'),
+          },
         ]}
       />
       <Navigation.Section 
