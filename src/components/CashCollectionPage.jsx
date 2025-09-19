@@ -136,6 +136,7 @@ function CashCollectionPage() {
     <Card>
       <Tabs tabs={tabs} selected={selectedTab} onSelect={handleTabChange}>
         <Card sectioned>
+          <p>View and Manage all orders</p>
           <InlineStack distribution="equalSpacing" alignment="center">
             <TextField
             label="Search orders"
