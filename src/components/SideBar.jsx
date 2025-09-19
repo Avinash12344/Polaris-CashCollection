@@ -89,7 +89,7 @@ function SideBar({onSelectPage}) {
             icon: OrderIcon,
             onClick: () => console.log('Orders clicked'),
           },
-          
+        
         ]}
       />
       <Navigation.Section 
