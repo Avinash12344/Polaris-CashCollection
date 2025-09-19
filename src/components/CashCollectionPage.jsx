@@ -143,7 +143,7 @@ function CashCollectionPage() {
             onChange={handleQueryChange}
             clearButton
             onClearButtonClick={handleQueryClear}
-            placeholder="Search by order ID"
+            placeholder="Search by orders"
             prefix={<Icon source={SearchIcon} tone="base" />}
             suffix={
     <Tooltip content="Type order ID or customer name to search">
