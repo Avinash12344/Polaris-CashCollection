@@ -98,7 +98,7 @@ function CashCollectionPage() {
     return result;
   }, [orders, selectedTab, queryValue, statusFilter]);
 
-  const unpaid = orders.filter((order) => order.status !== "paid");
+  
   const resourceName = { singular: 'order', plural: 'orders' };
 
   const { selectedResources, allResourcesSelected, handleSelectionChange } =
@@ -106,7 +106,7 @@ function CashCollectionPage() {
 
 
 
-  const rowMarkup = unpaid.map(
+  const rowMarkup = filteredOrders.map(
     ({ id, order, date, customer, total, paymentStatus, fulfillmentStatus }, index) => (
       <IndexTable.Row
         id={id}
@@ -224,7 +224,7 @@ function CashCollectionPage() {
 
           <IndexTable
             resourceName={resourceName}
-            itemCount={unpaid.length}
+            itemCount={filteredOrders.length}
             selectedItemsCount={allResourcesSelected ? 'All' : selectedResources.length}
             onSelectionChange={handleSelectionChange}
             headings={[
