@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import CashCollectionPage from './components/CashCollectionPage';
+import Users from './components/Users';
 
 function App() {
   const [mobileNavigationActive, setMobileNavigationActive] = useState(false);
@@ -22,7 +23,7 @@ function App() {
           </Page>
         );
       case 'users':
-        return <Page title="Users">Users Page</Page>;
+        return <Page title="Users"><Users /></Page>;
       case 'widgets':
         return <Page title="Widgets">Widgets Page</Page>;
       default:

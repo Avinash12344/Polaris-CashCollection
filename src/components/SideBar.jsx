@@ -66,7 +66,7 @@ function SideBar({onSelectPage}) {
             {
             label: 'Users',
             icon: OrderIcon,
-            onClick: () => console.log('Orders clicked'),
+            onClick: () => onSelectPage('Users'),
           },
           {
             label: 'Cash Collection',
